@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box1 , .box5 {
+
+	background: green;
+}
+
+
+.box2 , .box6 {
+
+	background: brown ;
+}
+
+
+.box3, .box7 {
+
+	background: lightblue;
+}
+
+
+.box4 ,.box8 {
+
+	background: lightpink;
+}
+
+.hero div {
+	padding: 30px;
+}
+
+h1 {
+	color: #fff;
+}
+
+/*.hero { display: grid;
+	grid-gap: 10px;
+grid-template-columns: 200px 200px 2fr 1fr; 
+grid-template-columns: auto auto auto auto;
+
+}
+*/
+
+
+
+.hero {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas: ' myArea myArea . . . ' '. . . myArea2 myArea2' ; 
+
+}
+
+.box1{
+	grid-area: myArea;
+}
+
+.box2 {
+	grid-area: myArea2;
+}
+
+
+/*for postion center you can post any thing in center*/
+
+
+/*
+.box1{
+	background: lightblue;
+	height: 500px;
+	weight : 800px ;
+	margin: auto;
+	color : #fff;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+use this tag for center position*/
